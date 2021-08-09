@@ -1,0 +1,27 @@
+.buttonBlock {
+  background: #ffffff;
+  border-radius: 4px;
+  height: 75px;
+  text-align: center;
+}
+
+.buttonBlock__button {
+  background: linear-gradient(180deg, #0077b5 0%, #0e6795 100%);
+  border: 1px solid #0275b1;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  height: 32px;
+  line-height: 11px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  width: 230px;
+}
+
+.buttonBlock__button:hover {
+  background: #fff;
+  border: 1px solid #0275b1;
+  color: #0275b1;
+}

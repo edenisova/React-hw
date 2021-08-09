@@ -1,0 +1,21 @@
+.hashtagItem{
+    background: #E9F0F8;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 32px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    text-align: center;
+    line-height: 150%;
+    color: #181818;
+    padding: 7px 12px 7px 12px;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.hashtagItem:hover{
+    background: #0275B1;
+    color: #FFFFFF;
+}

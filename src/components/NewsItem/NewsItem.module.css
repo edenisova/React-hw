@@ -1,0 +1,206 @@
+@font-face {
+    font-family: "icomoon";
+    src: url("fonts/icomoon.eot?l666bd");
+    src: url("fonts/icomoon.eot?l666bd#iefix") format("embedded-opentype"),
+      url("fonts/icomoon.ttf?l666bd") format("truetype"),
+      url("fonts/icomoon.woff?l666bd") format("woff"),
+      url("fonts/icomoon.svg?l666bd#icomoon") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"],
+  [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: "icomoon" !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .icon-more-horizontal-1:before {
+    content: "\e903";
+  }
+
+.newsItem{
+    background: #FFFFFF;
+    border-radius: 4px;
+}
+
+.reaction{
+    height: 45px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #F4F4F4;
+    margin-bottom: 15px;
+    padding-left: 15px;
+}
+
+.item {
+    align-items: center;
+    background: #fff;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    width: 90px;
+  }
+
+  .item__image {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 18px;
+  }
+
+.reactionText{
+    display: inline-block;
+    font-size: 10px;
+    line-height: 150%;
+/* identical to box height, or 15px */
+    margin-top: 15px;
+}
+
+.reactionName{
+  color: #0275B1;
+}
+
+.profileData{
+  display: flex;
+}
+
+.profilePhoto{
+  margin-left: 30px;
+}
+
+.profileName{
+  color: #181818;
+  font-size: 14px;
+  line-height: 13px;
+  font-weight: 700;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.profileName:hover{
+  color: #0275B1;
+  text-decoration: underline;
+}
+
+.profText{
+  display: block;
+  font-size: 10px;
+  line-height: 150%;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+.newsText{
+  font-size: 14px;
+  line-height: 150%;
+  overflow: hidden;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 30px;
+  margin-right: 30px;
+  position: relative;
+}
+
+.blurred{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 25px;
+    background-image: linear-gradient(#ffffff82, #ffffffd9, #ffffff);
+}
+
+.readMoreButton{
+  background-color: #fff;
+  border: none;
+  color: #0275B1;
+  font-weight: 700;
+  margin-left: 30px;
+  text-transform: uppercase;
+}
+
+.newsImg{
+  margin-left: 30px;
+}
+
+
+.newsFooter{
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  box-sizing: border-box;
+  border-top: 1px solid #F4F4F4;
+  margin-top: 20px;
+}
+
+.likesButton{
+  border: none;
+  border-right: 1px solid #F4F4F4;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 99px;
+  height: 50px;
+  background: #FFFFFF;
+  outline: none;
+}
+
+.likesImg{
+  margin-right: 6px;
+}
+
+.commentButton{
+  border: none;
+  border-right: 1px solid #F4F4F4;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 50px;
+  background: #FFFFFF;
+  outline: none;
+}
+
+.commentImg{
+  margin-right: 6px;
+}
+
+.buttonText{
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 11px;
+  text-transform: uppercase;
+}
+
+.shareButton{
+  border: none;
+  border-left: 1px solid #F4F4F4;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 126px;
+  background: #FFFFFF;
+  outline: none;
+}
+
+.shareImg{
+  margin-right: 7px;
+}

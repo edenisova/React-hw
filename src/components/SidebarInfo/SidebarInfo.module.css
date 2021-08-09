@@ -1,0 +1,39 @@
+.information {
+  height: 280px;
+  background: #ffffff;
+  background-image: url(Rectangle\ 3.jpg);
+  background-repeat: no-repeat;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding-right: 21px;
+  padding-left: 29px;
+  text-align: center;
+}
+
+.profileName {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.profilePhoto {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70px;
+  margin-bottom: 16px;
+  width: 100px;
+  height: 100px;
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 13px;
+  margin-right: 4px;
+}
+
+.profileText {
+  font-size: 10px;
+  line-height: 150%;
+}

@@ -1,0 +1,38 @@
+.groupItem{
+    background: #FFFFFF;
+    border: 1px solid #F4F4F4;
+    box-sizing: border-box;
+    border-radius: 6px;
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: row;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    width: 231px;
+    height: 80px;
+}
+
+.groupImg{
+    width: 52px;
+    height: 52px;
+    margin-right: 15px;
+    background: #2E2E62;
+    border-radius: 27px;
+}
+
+.groupName{
+    color: #181818;
+    display: flex;
+    font-size: 14px;
+    font-weight: 700;
+    align-items: center;
+    line-height: 125%;
+    text-decoration: none;
+}
+
+.groupName:hover{
+    color: #0275B1;
+    text-decoration: underline;
+}

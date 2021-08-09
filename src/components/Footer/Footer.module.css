@@ -1,0 +1,44 @@
+.footer {
+    background: linear-gradient(
+      180deg,
+      rgba(241, 244, 248, 0.8) 0%,
+      rgba(241, 244, 248, 0) 100%
+    );
+    border-top: 1px solid #e7e7e7;
+    display: flex;
+    height: 215px;
+    justify-content: center;
+    margin-top: 40px;
+  }
+
+.logoImg{
+    height: 46px;
+    width: 46px;
+}
+
+.langSelect {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff;
+    background-image: url(chevron-down.svg);
+    background-position-x: 241px;
+    background-position-y: 9px;
+    background-repeat: no-repeat;
+    border: 1px solid #f0f0f0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #181818;
+    font-size: 12px;
+    font-weight: 700;
+    height: 32px;
+    line-height: 32px;
+    padding-left: 15px;
+    padding-right: 14.25px;
+    text-transform: uppercase;
+    width: 270px;
+  }
+  
+  .langSelect:focus {
+    outline: none;
+  }

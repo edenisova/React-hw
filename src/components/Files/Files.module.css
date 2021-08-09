@@ -1,0 +1,47 @@
+.fileItem{
+    background: #E9F0F8;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 790px;
+    height: 80px;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    padding-right: 20px;
+}
+
+.leftWrapper{
+    display: flex;
+}
+
+.fileBack{
+    width: 42px;
+    height: 42px;
+    position: relative;
+    border-radius: 26px;
+    margin-left: 20px;
+    margin-right: 15px;
+}
+
+.fileImg{
+    position:absolute;
+}
+
+
+.fileName{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 150%;
+    margin-bottom: 5px;
+}
+
+.filetype{
+    font-size: 10px;
+    line-height: 150%;
+}
+
+.downloadImg{
+    margin-left: 398px;
+}
