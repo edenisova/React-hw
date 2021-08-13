@@ -73,6 +73,11 @@
 
 .reactionName{
   color: #0275B1;
+  text-decoration: none;
+}
+
+.reactionName:hover{
+  text-decoration: underline;
 }
 
 .profileData{

@@ -11,10 +11,74 @@
     margin-top: 40px;
   }
 
-.logoImg{
-    height: 46px;
-    width: 46px;
-}
+  .container {
+    display: flex;
+    width: 1180px;
+  }
+
+  .footerLogo {
+    margin-top: 29px;
+    width: 61px;
+  }
+
+  .footerLogo__img {
+    display: block;
+    margin-bottom: 12px;
+  }
+  
+  .footerLogo__name {
+    color: #181818;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+  }
+
+  .footerLogo__twoLetters {
+    color: #0077b5;
+  }
+
+.fastAccess {
+    margin-top: 35px;
+    width: 170px;
+  }
+
+  .columnMl65{
+    margin-left: 65px;
+  }
+
+  .fastAccess__button {
+    align-items: center;
+    background-color: #f7f9fb;
+    border: 1px solid #0275b1;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #0275b1;
+    display: flex;
+    font-size: 12px;
+    font-weight: 700;
+    height: 32px;
+    justify-content: space-between;
+    line-height: 11px;
+    margin-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-transform: uppercase;
+    width: 170px;
+  }
+  
+  .fastAccess__button:hover {
+    background-color: #0275b1;
+    color: #f7f9fb;
+  }
+
+  .lang {
+    margin-top: 35px;
+    width: 270px;
+  }
+  
+  .ml60 {
+    margin-left: 60px;
+  }
 
 .langSelect {
     -webkit-appearance: none;

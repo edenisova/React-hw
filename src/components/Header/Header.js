@@ -6,7 +6,7 @@ import profile from "./Rectangle.jpg";
 
 export default function Header() {
   let arr = [
-    { name: "icon-rss", text: "Feed", stylename: "margin-left-14", id: 1 },
+    { name: "icon-rss", text: "Feed", styleName: "margin-left-14", id: 1 },
     { name: "icon-users", text: "Network", id: 2 },
     { name: "icon-briefcase", text: "Jobs", id: 3 },
     { name: "icon-message-square", text: "Chat", id: 4 },
@@ -23,7 +23,7 @@ export default function Header() {
             <Item
               name={item.name}
               text={item.text}
-              stylename={item.stylename}
+              styleName={item.styleName}
               key={item.id}
             />
           );
@@ -39,7 +39,7 @@ export default function Header() {
               <div className="profile-raitings">
                 <span className="profile-raitings__views">367 views today</span>
                 <span className="profile-raitings__number">+32</span>
-                <span className="icon-arrow-up-right"></span>
+                <span className="icon-arrow-up-right"/>
               </div>
             </div>
           </div>

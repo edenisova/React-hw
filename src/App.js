@@ -139,7 +139,7 @@ function App() {
             content={hashtags.map((item, index) => (
               <Hashtag text={item} key = {index}/>
             ))}
-          ></SidebarItem>
+          />
 
           <SidebarItem
             header="Trending articls"

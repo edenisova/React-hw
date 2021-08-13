@@ -9,7 +9,7 @@ export default function NewPostItem(props) {
         className={styles.postBlock__input}
         type="text"
         placeholder="What’s on your mind?"
-      ></input>
+      />
     </div>
   );
 }

@@ -1,0 +1,25 @@
+.navLinks {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    width: 135px;
+  }
+
+.navLinks__text{
+    color: #181818;
+    font-size: 12px;
+    line-height: 11px;
+    margin-bottom: 14px;
+    text-decoration: none;
+}
+
+  .navLinks__text:hover {
+    color: #0275b1;
+    text-decoration: underline;
+  }
+
+  .columnMl69{
+    height: 127px;
+    margin-left: 69px;
+    margin-top: 34px;
+  }

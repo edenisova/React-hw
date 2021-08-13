@@ -13,7 +13,7 @@ export default function NewsItem(props) {
   return (
     <div className={styles.newsItem}>
       <div className={styles.reaction}>
-        <div>{props.reaction.map((item, index, array) => (index == array.length - 1) ? <div className = {styles.reactionText} key={index}>and <a href = "" className = {styles.reactionName}>{item}</a> comment this</div> : <div className = {styles.reactionText} key={index}><a href = "" className = {styles.reactionName}>{item}</a>,</div>)}</div>
+        <div>{props.reaction.map((item, index, array) => (index === array.length - 1) ? <div className = {styles.reactionText} key={index}>and <a href = "" className = {styles.reactionName}>{item}</a> comment this</div> : <div className = {styles.reactionText} key={index}><a href = "" className = {styles.reactionName}>{item}</a>,</div>)}</div>
         <button className={styles.item}></button>
       </div>
       <div className={styles.profileData}>
