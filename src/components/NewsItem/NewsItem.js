@@ -1,15 +1,19 @@
 import React from "react";
 import styles from "./NewsItem.module.css";
-import likesimg from "./Vector.svg";
-import likesClick from "./thumbs-up.jpg";
-import commentsimg from "./Vector (1).svg";
 import shareimg from "./share-2.svg";
+import LikesButton from '../LikesButton/LikesButton'
+import CommentsButton from '../CommentsButton/CommentsButton'
+import NewsText from '../NewsText/NewsText'
 
 export default function NewsItem(props) {
-  let initVal = false;
-  const [isToggle, setState] = React.useState(initVal);
+  const [isToggle, setState] = React.useState(false);
   const [isOpen, setOpen] = React.useState(false);
-  let likes = isToggle ? +props.likes + 1 : props.likes;
+  function handleClick(isToggle){
+    setState(!isToggle);
+  }
+  function handleOpen(isOpen){
+    setOpen(!isOpen);
+  }
   return (
     <div className={styles.newsItem}>
       <div className={styles.reaction}>
@@ -25,58 +29,15 @@ export default function NewsItem(props) {
           <span className={styles.profText}>{props.profession}</span>
         </div>
       </div>
-      {isOpen ? (
-        <>
-          <div className={styles.newsText}>{props.news}</div>
-          <button
-            className={styles.readMoreButton}
-            onClick={() => setOpen(!isOpen)}
-          >
-            Read Less
-          </button>
-        </>
-      ) : props.news.split(" ").length > 60 ? (
-        <>
-          <div className={styles.newsText}>
-            {props.news.split(" ").slice(0, 60).join(" ") + '...'}
-            <div className={styles.blurred}></div>
-          </div>
-          <button
-            className={styles.readMoreButton}
-            onClick={() => setOpen(!isOpen)}
-          >
-            Read More
-          </button>
-        </>
-      ) : (
-        <div className={styles.newsText}>{props.news}</div>
-      )}
+      <NewsText onClick={handleOpen} news={props.news} isOpen={isOpen}/>
       {props.newsImg && (
         <img className={styles.newsImg} src={props.newsImg}/>
       )}
       {props.content}
       <div className={styles.newsFooter}>
         <div>
-          <button
-            className={styles.likesButton}
-            onClick={() => setState(!isToggle)}
-          >
-            {isToggle ? (
-              <>
-                <img src={likesClick} className={styles.likesImg}/>
-                <span className={styles.buttonText}>{likes}</span>
-              </>
-            ) : (
-              <>
-                <img src={likesimg} className={styles.likesImg}/>
-                <span className={styles.buttonText}>{likes}</span>
-              </>
-            )}
-          </button>
-          <button className={styles.commentButton}>
-            <img src={commentsimg} className={styles.commentImg}/>
-            <span className={styles.buttonText}>{props.comments}</span>
-          </button>
+          <LikesButton likes={props.likes} isToggle={isToggle} onClick={handleClick}/>
+          <CommentsButton comments={props.comments}/>
         </div>
         <button className={styles.shareButton}>
           <img src={shareimg} className={styles.shareImg}/>

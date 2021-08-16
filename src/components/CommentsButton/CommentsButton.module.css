@@ -1,0 +1,23 @@
+.commentButton{
+    border: none;
+    border-right: 1px solid #F4F4F4;
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 50px;
+    background: #FFFFFF;
+    outline: none;
+  }
+  
+  .commentImg{
+    margin-right: 6px;
+  }
+  
+  .buttonText{
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 11px;
+    text-transform: uppercase;
+  }
