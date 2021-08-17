@@ -19,7 +19,16 @@
   }
 
   .columnMl69{
-    height: 127px;
     margin-left: 69px;
     margin-top: 34px;
+  }
+
+  .columnMl35 {
+    margin-left: 35px;
+    margin-top: 76px;
+  }
+
+  .columnMl45{
+    margin-left: 45px;
+    margin-top: 76px;
   }

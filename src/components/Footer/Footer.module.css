@@ -1,3 +1,38 @@
+@font-face {
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot?l666bd");
+  src: url("fonts/icomoon.eot?l666bd#iefix") format("embedded-opentype"),
+    url("fonts/icomoon.ttf?l666bd") format("truetype"),
+    url("fonts/icomoon.woff?l666bd") format("woff"),
+    url("fonts/icomoon.svg?l666bd#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon"],
+[class*=" icon"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.iconHelpCircle:before {
+  content: "\e905";
+}
+.iconSettings:before {
+  content: "\e900";
+}
+
 .footer {
     background: linear-gradient(
       180deg,
@@ -37,9 +72,26 @@
     color: #0077b5;
   }
 
+  .footerSection {
+    color: #181818;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 11px;
+  }
+
 .fastAccess {
     margin-top: 35px;
     width: 170px;
+  }
+
+  .mb23 {
+    margin-bottom: 23px;
+  }
+
+  .columnMl69{
+    height: 127px;
+    margin-left: 69px;
+    margin-top: 34px;
   }
 
   .columnMl65{
