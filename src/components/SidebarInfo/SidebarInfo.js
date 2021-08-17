@@ -4,16 +4,16 @@ import profilePhoto from "./Ellipse.jpg";
 import logo from "./Logo.jpg";
 
 export default function SidebarInfo(props) {
+  const {name, profileText} = props;
   return (
     <div className={styles.information}>
       <img src={profilePhoto} alt="" className={styles.profilePhoto} />
       <div className={styles.profileName}>
-        <span className={styles.name}>Dmitry Kargaev</span>
+        <span className={styles.name}>{name}</span>
         <img src={logo} />
       </div>
       <div className={styles.profileText}>
-        Freelance UX/UI designer, 80+ projects in web design, mobile apps (iOS &
-        android) and creative projects. Open to offers.
+        {profileText}
       </div>
     </div>
   );

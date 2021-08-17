@@ -126,7 +126,8 @@ function App() {
           })}
         </div>
         <div className="sidebar">
-          <SidebarInfo />
+          <SidebarInfo name="Dmitry Kargaev" profileText="Freelance UX/UI designer, 80+ projects in web design, mobile apps (iOS &
+        android) and creative projects. Open to offers."/>
           <SidebarButton />
           <SidebarItem
             header="My groups"
