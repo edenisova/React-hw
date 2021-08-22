@@ -6,10 +6,12 @@ import CommentsButton from '../CommentsButton/CommentsButton'
 import NewsText from '../NewsText/NewsText'
 
 export default function NewsItem(props) {
+  const [likes, updateLikes] = React.useState(props.likes);
   const [isToggle, setState] = React.useState(false);
   const [isOpen, setOpen] = React.useState(false);
-  function handleClick(isToggle){
-    setState(!isToggle);
+  function handleClick(isToggle, likes){
+    setState(isToggle);
+    updateLikes(likes => isToggle ? ++likes : --likes);
   }
   function handleOpen(isOpen){
     setOpen(!isOpen);
@@ -18,7 +20,9 @@ export default function NewsItem(props) {
     <div className={styles.newsItem}>
       <div className={styles.reaction}>
         <div>{props.reaction.map((item, index, array) => (index === array.length - 1) ? <div className = {styles.reactionText} key={index}>and <a href = "" className = {styles.reactionName}>{item}</a> comment this</div> : <div className = {styles.reactionText} key={index}><a href = "" className = {styles.reactionName}>{item}</a>,</div>)}</div>
-        <button className={styles.item}></button>
+        <button className={styles.item}>
+        <span className={`icon-more-horizontal-1 ${styles.item__image}`}/>
+        </button>
       </div>
       <div className={styles.profileData}>
         <img className={styles.profilePhoto} src={props.profileImg}/>
@@ -36,7 +40,7 @@ export default function NewsItem(props) {
       {props.content}
       <div className={styles.newsFooter}>
         <div>
-          <LikesButton likes={props.likes} isToggle={isToggle} onClick={handleClick}/>
+          <LikesButton likes={likes} isToggle={isToggle} onClick={handleClick}/>
           <CommentsButton comments={props.comments}/>
         </div>
         <button className={styles.shareButton}>

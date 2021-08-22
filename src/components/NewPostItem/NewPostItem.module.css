@@ -14,6 +14,7 @@
 }
 
 .postBlock__header {
+  cursor: default;
   height: 32px;
   box-sizing: border-box;
   border-bottom: 1px solid #f4f4f4;
@@ -23,6 +24,8 @@
 .postBlock__input {
   border: none;
   height: 18px;
+  margin-top: 10px;
+  margin-right: 15px;
   width: 600px;
 }
 
@@ -30,4 +33,13 @@
   font-size: 18px;
   line-height: 17px;
   color: rgba(24, 24, 24, 0.2);
+}
+
+.postBlock__input:focus-within {
+  outline: none;
+}
+
+.addButton{
+  height: 18px;
+  width: 18px;
 }

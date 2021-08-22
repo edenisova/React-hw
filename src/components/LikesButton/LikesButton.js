@@ -5,9 +5,8 @@ import styles from './LikesButton.module.css';
 
 
 export default function LikesButton(props) {
-    let likes = props.isToggle ? +props.likes + 1 : props.likes;
     function handleClick(){
-        props.onClick(props.isToggle);
+        props.onClick(!props.isToggle, props.likes);
     }
     return (
         <button
@@ -17,14 +16,13 @@ export default function LikesButton(props) {
         {props.isToggle ? (
           <>
             <img src={likesClick} className={styles.likesImg}/>
-            <span className={styles.buttonText}>{likes}</span>
           </>
         ) : (
           <>
             <img src={likesimg} className={styles.likesImg}/>
-            <span className={styles.buttonText}>{likes}</span>
           </>
         )}
+        <span className={styles.buttonText}>{props.likes}</span>
       </button>
     );
   }

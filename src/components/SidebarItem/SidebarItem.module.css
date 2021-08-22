@@ -1,56 +1,57 @@
-.sidebarItem{
-    background: #FCFDFD;
-    border-radius: 4px;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-top: 25px;
-    padding-bottom: 30px;
+.sidebarItem {
+  background: #fcfdfd;
+  border-radius: 4px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 25px;
+  padding-bottom: 30px;
 }
 
 .sidebarTop {
-    border-bottom: 1px solid #f4f4f4;
-    box-sizing: border-box;
-    display: flex;
-    height: 31px;
-    justify-content: space-between;
-    margin-bottom: 20px;
-    padding-right: 1px;
-    width: 230px;
-  }
-  
-  .sidebarHeaders {
-    color: #181818;
-    display: block;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 11px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-  }
+  border-bottom: 1px solid #f4f4f4;
+  box-sizing: border-box;
+  display: flex;
+  height: 31px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-right: 1px;
+  width: 230px;
+}
 
-  .editList{
-    font-size: 12px;
-    font-weight: 700;
+.sidebarHeaders {
+  color: #181818;
+  cursor: default;
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 11px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.editList {
+  font-size: 12px;
+  font-weight: 700;
   line-height: 11px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #0275B1;
-  }
+  color: #0275b1;
+}
 
-  .editList:hover{
-    text-decoration: underline;
-  }
+.editList:hover {
+  text-decoration: underline;
+}
 
-  .showAll{
-    font-size: 12px;
-    font-weight: 700;
+.showAll {
+  font-size: 12px;
+  font-weight: 700;
   line-height: 11px;
   margin-top: 25px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #0275B1;
-  }
+  color: #0275b1;
+}
 
-  .showAll:hover{
-    text-decoration: underline;
-  }
+.showAll:hover {
+  text-decoration: underline;
+}

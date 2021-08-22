@@ -62,7 +62,7 @@ function App() {
     {
       reaction: names,
       news: "What did the Dursleys care if Harry lost his place on the House Quidditch team because he hadn’t practiced all summer? What was it to the Dursleys if Harry went back to school without any of his homework done? The Dursleys were what wizards called Muggles (not a drop of magical blood in their veins).What did the Dursleys care if Harry lost his place on the House Quidditch team because he hadn’t practiced all summer? What was it to the Dursleys if Harry went back to school without any of his homework done? The Dursleys were what wizards called Muggles (not a drop of magical blood in their veins).",
-      likes: "42",
+      likes: 42,
       comments: "9",
       profileImg: profilePhoto,
       profileName: "Theresa Steward",
@@ -72,7 +72,7 @@ function App() {
     {
       reaction: names,
       news: "How’s your day going, guys?",
-      likes: "12",
+      likes: 12,
       comments: "3",
       profileImg: profilePhoto_1,
       profileName: "Kyle Fisher",
@@ -83,7 +83,7 @@ function App() {
     {
       reaction: names,
       news: "There is some new guidelines for iOS",
-      likes: "89",
+      likes: 89,
       comments: "7",
       profileImg: profilePhoto_2,
       profileName: "Brandon Wilson",
@@ -94,7 +94,7 @@ function App() {
     {
       reaction: names,
       news: "The bun runs along the road and meets a wolf. «Little bun, little bun, I want to eat you!» says the wolf. «I ran away from Grandfather, I ran away from Grandmother, I ran away from the hare. And I can run away from you, grey wolf!» says the bun and runs away.",
-      likes: "10",
+      likes: 10,
       comments: "0",
       profileImg: profilePhoto_3,
       profileName: "Audrey Alexander",

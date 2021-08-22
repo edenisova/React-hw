@@ -32,11 +32,11 @@ export default function Footer(props) {
         <div class={`${styles.footerSection} ${styles.mb23}`}>Fast access</div>
           <button className={styles.fastAccess__button}>
             Questions?
-            {/*<span class="icon-help-circle fast-access__button-icon"></span>*/}
+            <span className={`icon-help-circle ${styles.fastAccess__buttonIcon}`}/>
           </button>
           <button className={styles.fastAccess__button}>
             Settings
-            <span className={`${styles.iconSettings} ${styles.fastAccess__buttonIcon}`}></span>
+            <span className={`icon-settings ${styles.fastAccess__buttonIcon}`}/>
           </button>
         </div>
         <div className={`${styles.lang} ${styles.ml60}`}>

@@ -10,8 +10,8 @@
   font-display: block;
 }
 
-[class^="icon"],
-[class*=" icon"] {
+[class^="icon-"],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
   speak: never;
@@ -26,10 +26,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.iconHelpCircle:before {
+.icon-help-circle:before {
   content: "\e905";
 }
-.iconSettings:before {
+.icon-settings:before {
   content: "\e900";
 }
 
