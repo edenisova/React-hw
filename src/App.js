@@ -102,6 +102,26 @@ function App() {
       id: 4,
     },
   ];
+  newsData.map(item => {
+    localStorage.setItem("post " + item.id, JSON.stringify(item));
+    //localStorage.setItem("likes " + item.id, item.likes);
+});
+  if(!localStorage.getItem("likes_1")){
+    localStorage.setItem("likes_1", 42);
+    localStorage.setItem("isToggle_1", "false");
+  }
+  if(!localStorage.getItem("likes_2")){
+    localStorage.setItem("likes_2", 12);
+    localStorage.setItem("isToggle_2", "false");
+  }
+  if(!localStorage.getItem("likes_3")){
+    localStorage.setItem("likes_3", 89);
+    localStorage.setItem("isToggle_3", "false");
+  }
+  if(!localStorage.getItem("likes_4")){
+    localStorage.setItem("likes_4", 10);
+    localStorage.setItem("isToggle_4", "false");
+  }
   return (
     <div className="App">
       <Header />
@@ -111,15 +131,8 @@ function App() {
           {newsData.map((item) => {
             return (
               <NewsItem
-                reaction={item.reaction}
-                news={item.news}
-                likes={item.likes}
-                comments={item.comments}
-                profileImg={item.profileImg}
-                profileName={item.profileName}
-                profession={item.profession}
-                newsImg={item.newsImg}
                 key={item.id}
+                itemId = {item.id}
                 content={item.files && item.files.map((el, ind) => <Files filename={el.filename} filetype={el.filetype} key={ind}/>)}
               />
             );
