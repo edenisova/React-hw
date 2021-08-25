@@ -1,6 +1,7 @@
 import "./Header.css";
 import Item from "../Item/Item";
 import SearchForm from "../SearchForm/SearchForm";
+import ProfileItem from "../ProfileItem/ProfileItem"
 import logo from "./Logo.svg";
 import profile from "./Rectangle.jpg";
 
@@ -29,23 +30,9 @@ export default function Header() {
           );
         })}
         <SearchForm />
-        <div className="profile">
-          <div className="c-profile-flex">
-            <img src={profile} alt="Profile photo" className="profile__image" />
-            <div className="profile-data">
-              <div className="profile-data-personal">
-                D. Kargaev<span className="profile-data__pointer">You</span>
-              </div>
-              <div className="profile-raitings">
-                <span className="profile-raitings__views">367 views today</span>
-                <span className="profile-raitings__number">+32</span>
-                <span className="icon-arrow-up-right"/>
-              </div>
-            </div>
-          </div>
-        </div>
+        <ProfileItem name="D. Kargaev" views="367" raiting="32" photo={profile}/>
       </div>
-      <Item name="icon-more-horizontal-1" text="Other" stylename="other" />
+      <Item name="icon-more-horizontal" text="Other" stylename="other" />
     </div>
   );
 }

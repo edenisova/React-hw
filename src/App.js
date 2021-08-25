@@ -104,7 +104,6 @@ function App() {
   ];
   newsData.map(item => {
     localStorage.setItem("post " + item.id, JSON.stringify(item));
-    //localStorage.setItem("likes " + item.id, item.likes);
 });
   if(!localStorage.getItem("likes_1")){
     localStorage.setItem("likes_1", 42);
@@ -133,7 +132,6 @@ function App() {
               <NewsItem
                 key={item.id}
                 itemId = {item.id}
-                content={item.files && item.files.map((el, ind) => <Files filename={el.filename} filetype={el.filetype} key={ind}/>)}
               />
             );
           })}

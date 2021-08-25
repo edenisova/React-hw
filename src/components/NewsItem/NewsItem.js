@@ -4,6 +4,7 @@ import shareimg from "./share-2.svg";
 import LikesButton from '../LikesButton/LikesButton'
 import CommentsButton from '../CommentsButton/CommentsButton'
 import NewsText from '../NewsText/NewsText'
+import Files from '../Files/Files'
 
 export default function NewsItem(props) {
  /* localStorage.removeItem("likes_1")
@@ -54,7 +55,7 @@ export default function NewsItem(props) {
       {post.newsImg && (
         <img className={styles.newsImg} src={post.newsImg}/>
       )}
-      {post.content}
+      {post.files && post.files.map((el, ind) => <Files filename={el.filename} filetype={el.filetype} key={ind}/>)}
       <div className={styles.newsFooter}>
         <div>
           <LikesButton likes={likes} isToggle={isToggle} itemId={props.itemId} onClick={handleClick}/>

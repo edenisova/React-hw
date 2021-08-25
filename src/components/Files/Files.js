@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './Files.module.css';
 import downloadImg from './download-cloud.png'
 import fileBack from './Rectangle 2.2 (4).jpg'
-import fileImg from './file-text.png'
 
 
 export default function Files(props) {
