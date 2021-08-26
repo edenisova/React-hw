@@ -26,6 +26,45 @@
   width: 850px;
 }
 
+.sortingLine{
+  display: flex;
+  align-items: center;
+  margin-top: 33px;
+  margin-bottom: 33px;
+}
+
+.sortBy{
+  font-size: 12px;
+  font-weight: 700;
+line-height: 11px;
+text-align: center;
+text-transform: uppercase;
+margin-left: 20px;
+
+color: #181818;
+}
+
+.trendingLine{
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 11px;
+  text-transform: uppercase;
+  color: #0275B1;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.trendingLine:hover{
+  text-decoration: underline;
+}
+
+.divLine{
+  width: 332px;
+  height: 0px;
+  border: 1px solid #E7E7E7;
+  display: inline;
+}
+
 .sidebar {
   display: flex;
   flex-direction: column;

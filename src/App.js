@@ -127,6 +127,11 @@ function App() {
       <div className="main">
         <div className="content">
           <NewPostItem />
+          <div className="sortingLine">
+          <div className="divLine"/>
+          <span className="sortBy">Sort by: </span><a className="trendingLine" href="">Trending</a>
+          <div className="divLine"/>
+          </div>
           {newsData.map((item) => {
             return (
               <NewsItem

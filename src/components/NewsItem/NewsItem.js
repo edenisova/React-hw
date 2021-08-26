@@ -7,14 +7,6 @@ import NewsText from '../NewsText/NewsText'
 import Files from '../Files/Files'
 
 export default function NewsItem(props) {
- /* localStorage.removeItem("likes_1")
-  localStorage.removeItem("likes_2")
-  localStorage.removeItem("likes_3")
-  localStorage.removeItem("likes_4")
-  localStorage.removeItem("isToggle 1")
-  localStorage.removeItem("isToggle 2")
-  localStorage.removeItem("isToggle 3")
-  localStorage.removeItem("isToggle 4")*/
   let toggleState = localStorage.getItem('isToggle_' + props.itemId) === "false" ? false : true;
   const post = JSON.parse(localStorage.getItem('post ' + props.itemId));
   const [likes, updateLikes] = React.useState(localStorage.getItem('likes_' + props.itemId));
@@ -39,7 +31,7 @@ export default function NewsItem(props) {
       <div className={styles.reaction}>
         <div>{post.reaction.map((item, index, array) => (index === array.length - 1) ? <div className = {styles.reactionText} key={index}>and <a href = "" className = {styles.reactionName}>{item}</a> comment this</div> : <div className = {styles.reactionText} key={index}><a href = "" className = {styles.reactionName}>{item}</a>,</div>)}</div>
         <button className={styles.item}>
-        <span className={`icon-more-horizontal-1 ${styles.item__image}`}/>
+        <span className={`icon-more-horizontal ${styles.item__image}`}/>
         </button>
       </div>
       <div className={styles.profileData}>
@@ -69,3 +61,4 @@ export default function NewsItem(props) {
     </div>
   );
 }
+

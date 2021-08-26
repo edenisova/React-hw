@@ -25,10 +25,6 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-arrow-up-right:before {
-  content: "\e800";
-  color: #02b033;
-}
 .icon-bell:before {
   content: "\e801";
 }
