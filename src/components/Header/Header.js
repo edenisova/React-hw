@@ -2,8 +2,8 @@ import "./Header.css";
 import Item from "../Item/Item";
 import SearchForm from "../SearchForm/SearchForm";
 import ProfileItem from "../ProfileItem/ProfileItem"
-import logo from "./Logo.svg";
-import profile from "./Rectangle.jpg";
+import logo from "../../Images/Logo_1.svg";
+import profile from "../../Images/Rectangle.jpg";
 
 export default function Header() {
   let arr = [

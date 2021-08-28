@@ -137,7 +137,7 @@
     -moz-appearance: none;
     appearance: none;
     background: #fff;
-    background-image: url(chevron-down.svg);
+    background-image: url(../../Images/chevron-down.svg);
     background-position-x: 241px;
     background-position-y: 9px;
     background-repeat: no-repeat;

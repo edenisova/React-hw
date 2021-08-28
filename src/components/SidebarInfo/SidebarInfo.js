@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./SidebarInfo.module.css";
-import profilePhoto from "./Ellipse.jpg";
-import logo from "./Logo.jpg";
+import profilePhoto from "../../Images/Ellipse.jpg";
+import logo from "../../Images/Logo_2.jpg";
 
 export default function SidebarInfo(props) {
   const {name, profileText} = props;

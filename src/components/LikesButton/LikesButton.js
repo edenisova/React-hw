@@ -1,6 +1,6 @@
 import React from 'react';
-import likesimg from "./Vector.svg";
-import likesClick from "./thumbs-up.jpg";
+import likesimg from "../../Images/Vector.svg";
+import likesClick from "../../Images/thumbs-up.jpg";
 import styles from './LikesButton.module.css';
 
 

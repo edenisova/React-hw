@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Footer.module.css";
 import FooterLinks from "../FooterLinks/FooterLinks";
-import logo from "./Logo.svg";
+import logo from "../../Images/Logo.svg";
 
 export default function Footer(props) {
   let linksFirst = ["About", "Careers", "Advertising", "Small Business"];

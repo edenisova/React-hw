@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./CommentsButton.module.css";
-import commentsimg from "./Vector (1).svg";
+import commentsimg from "../../Images/CommentsButton.svg";
 
 export default function CommentsButton(props) {
     return (

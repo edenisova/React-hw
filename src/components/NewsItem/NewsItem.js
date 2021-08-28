@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./NewsItem.module.css";
-import shareimg from "./share-2.svg";
+import shareimg from "../../Images/share-2.svg";
 import LikesButton from '../LikesButton/LikesButton'
 import CommentsButton from '../CommentsButton/CommentsButton'
 import NewsText from '../NewsText/NewsText'
@@ -21,7 +21,6 @@ export default function NewsItem(props) {
   function handleClick(isToggleArg, likesArg){
     setState(isToggleArg);
     updateLikes(likesArg => isToggleArg ? ++likesArg : --likesArg);
-    
   }
   function handleOpen(isOpen){
     setOpen(!isOpen);

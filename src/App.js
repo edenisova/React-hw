@@ -8,19 +8,18 @@ import SidebarInfo from "./components/SidebarInfo/SidebarInfo";
 import SidebarButton from "./components/SidebarButton/SidebarButton";
 import NewPostItem from "./components/NewPostItem/NewPostItem";
 import NewsItem from "./components/NewsItem/NewsItem";
-import Files from "./components/Files/Files"
 import Footer from './components/Footer/Footer'
-import profilePhoto from "./Photo.jpg";
-import profilePhoto_1 from "./Photo1.jpg";
-import profilePhoto_2 from "./Photo (1).jpg";
-import profilePhoto_3 from "./Photo (2).jpg";
-import newsImg from "./Rectangle.jpg";
-import groupImg from "./Rectangle 2.2.jpg";
-import groupImg_2 from "./Rectangle 2.2 (1).jpg";
-import groupImg_3 from "./Rectangle 2.2 (2).jpg";
-import articleImg from "./article.jpg";
-import articleImg_2 from "./article1.jpg";
-import articleImg_3 from "./article2.jpg";
+import profilePhoto from "./Images/Photo.jpg";
+import profilePhoto_1 from "./Images/Photo1.jpg";
+import profilePhoto_2 from "./Images/Photo (1).jpg";
+import profilePhoto_3 from "./Images/Photo (2).jpg";
+import newsImg from "./Images/Rectangle_1.jpg";
+import groupImg from "./Images/Rectangle 2.2.jpg";
+import groupImg_2 from "./Images/Rectangle 2.2 (1).jpg";
+import groupImg_3 from "./Images/Rectangle 2.2 (2).jpg";
+import articleImg from "./Images/article.jpg";
+import articleImg_2 from "./Images/article1.jpg";
+import articleImg_3 from "./Images/article2.jpg";
 import { isTSEnumMember } from "@babel/types";
 
 function App() {

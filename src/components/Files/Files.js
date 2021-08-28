@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Files.module.css';
-import downloadImg from './download-cloud.png'
-import fileBack from './Rectangle 2.2 (4).jpg'
+import downloadImg from '../../Images/download-cloud.png'
+import fileBack from '../../Images/Rectangle 2.2 (4).jpg'
 
 
 export default function Files(props) {

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./NewPostItem.module.css";
 
-export default function NewPostItem(props) {
+export default function NewPostItem() {
   return (
     <div className={styles.postBlock}>
       <div className={styles.postBlock__header}>New Post</div>
