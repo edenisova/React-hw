@@ -1,15 +1,21 @@
-/*export function increment() {
+export function increment(id) {
     return {
-      type: 'INCREMENT_LIKES'
+      type: 'INCREMENT_LIKES',
+      id
     }
   }
   
-  export function decrement() {
+  export function decrement(id) {
     return {
-      type: 'DECREMENT_LIKES'
+      type: 'DECREMENT_LIKES',
+      id
     }
-  }*/
+  }
 
-const changeLikes = (isToggled) => {
+/*const changeLikes = (isToggled) => {
     return isToggled ? {type: 'INCREMENT_LIKES'} : {type: 'DECREMENT_LIKES'}
-}
+}*/
+
+/*export function addPost(text){
+    return {type: 'ADD_POST', text}
+} */

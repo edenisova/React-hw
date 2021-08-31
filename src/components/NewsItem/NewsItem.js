@@ -2,6 +2,9 @@ import React from "react";
 import styles from "./NewsItem.module.css";
 import shareimg from "../../Images/share-2.svg";
 import LikesButton from '../LikesButton/LikesButton'
+import { increment } from '../../action'
+import { decrement } from "../../action";
+import { useDispatch } from 'react-redux';
 import CommentsButton from '../CommentsButton/CommentsButton'
 import NewsText from '../NewsText/NewsText'
 import Files from '../Files/Files'
@@ -9,18 +12,15 @@ import Files from '../Files/Files'
 export default function NewsItem(props) {
   let toggleState = localStorage.getItem('isToggle_' + props.itemId) === "false" ? false : true;
   const post = JSON.parse(localStorage.getItem('post ' + props.itemId));
-  const [likes, updateLikes] = React.useState(localStorage.getItem('likes_' + props.itemId));
   const [isToggle, setState] = React.useState(toggleState);
   const [isOpen, setOpen] = React.useState(false);
-  React.useEffect(() => {
-   localStorage.setItem('likes_' + props.itemId, likes);
-  }, [likes, props.itemId]);
+  const dispatch = useDispatch();
   React.useEffect(() => {
     localStorage.setItem('isToggle_' + props.itemId, isToggle.toString())
   }, [props.itemId, isToggle]);
   function handleClick(isToggleArg, likesArg){
     setState(isToggleArg);
-    updateLikes(likesArg => isToggleArg ? ++likesArg : --likesArg);
+    isToggleArg === true ? dispatch(increment(props.itemId)) : dispatch(decrement(props.itemId));
   }
   function handleOpen(isOpen){
     setOpen(!isOpen);
@@ -49,7 +49,7 @@ export default function NewsItem(props) {
       {post.files && post.files.map((el, ind) => <Files filename={el.filename} filetype={el.filetype} key={ind}/>)}
       <div className={styles.newsFooter}>
         <div>
-          <LikesButton likes={likes} isToggle={isToggle} itemId={props.itemId} onClick={handleClick}/>
+          <LikesButton likes={localStorage.getItem('likes_' + props.itemId)} isToggle={isToggle} itemId={props.itemId} onClick={handleClick}/>
           <CommentsButton comments={post.comments}/>
         </div>
         <button className={styles.shareButton}>

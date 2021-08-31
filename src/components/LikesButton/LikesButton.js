@@ -6,7 +6,7 @@ import styles from './LikesButton.module.css';
 
 export default function LikesButton(props) {
     function handleClick(){
-        props.onClick(!props.isToggle, props.likes);
+        props.onClick(!props.isToggle);
     }
     return (
         <button

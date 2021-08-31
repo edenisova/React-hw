@@ -80,12 +80,19 @@
   margin-bottom: 20px;
 }
 
+.inputFLex{
+  align-items: center;
+  display: flex;
+  height: 32px;
+  justify-content: space-between;
+  width: 790px;
+}
+
 .postBlock__input {
   border: none;
   height: 18px;
   margin-top: 10px;
-  margin-right: 15px;
-  width: 600px;
+  width: 550px;
 }
 
 .postBlock__input::placeholder {
@@ -98,21 +105,25 @@
   outline: none;
 }
 
-.newPostButton{
-  height: 32px;
-  width: 32px;
+.attachButton{
+  height: 25px;
+  width: 25px;
   background: #FFFFFF;
-  margin-bottom: 25px;
   color: black;
-  box-sizing: border-box;
+  border:none;
   padding: 0;
+  cursor: pointer;
 }
 
 .addButton{
   height: 32px;
   width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
   background: linear-gradient(180deg, #0077B5 0%, #0E6795 100%);
 border-radius: 4px;
 box-sizing: border-box;
-padding: 0;
+cursor: pointer;
 }

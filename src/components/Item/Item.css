@@ -51,6 +51,7 @@
     box-sizing: border-box;
     display: flex;
     color: #181818;
+    cursor: pointer;
     font-size: 12px;
     font-weight: 700;
     line-height: 11px;

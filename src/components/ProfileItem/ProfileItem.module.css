@@ -59,6 +59,7 @@
     font-size: 12px;
     margin-bottom: 11px;
     line-height: 11px;
+    cursor: default;
     text-transform: uppercase;
     color: #181818;
   }
@@ -67,6 +68,7 @@
     font-size: 12px;
     line-height: 11px;
     margin-left: 10px;
+    cursor: default;
     text-transform: uppercase;
     color: rgba(24, 24, 24, 0.2);
   }
@@ -80,6 +82,7 @@
     font-size: 12px;
     line-height: 11px;
     color: #747474;
+    cursor: default;
   }
   
   .profileRaitings__number {
@@ -87,6 +90,7 @@
     font-size: 12px;
     font-weight: 700;
     line-height: 11px;
+    cursor: default;
     margin-left: 4px;
     color: #02b033;
   }

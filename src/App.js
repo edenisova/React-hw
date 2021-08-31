@@ -20,6 +20,8 @@ import groupImg_3 from "./Images/Rectangle 2.2 (2).jpg";
 import articleImg from "./Images/article.jpg";
 import articleImg_2 from "./Images/article1.jpg";
 import articleImg_3 from "./Images/article2.jpg";
+import pointerDown from './Images/chevron-down.png'
+
 import { isTSEnumMember } from "@babel/types";
 
 function App() {
@@ -104,6 +106,8 @@ function App() {
   newsData.map(item => {
     localStorage.setItem("post " + item.id, JSON.stringify(item));
 });
+localStorage.setItem("Posts", JSON.stringify(newsData));
+localStorage.setItem("length", newsData.length);
   if(!localStorage.getItem("likes_1")){
     localStorage.setItem("likes_1", 42);
     localStorage.setItem("isToggle_1", "false");
@@ -128,7 +132,7 @@ function App() {
           <NewPostItem />
           <div className="sortingLine">
           <div className="divLine"/>
-          <span className="sortBy">Sort by: </span><a className="trendingLine" href="">Trending</a>
+          <span className="sortBy">Sort by: </span><a className="trendingLine" href="">Trending</a><img src={pointerDown} className="pointerDown"/>
           <div className="divLine"/>
           </div>
           {newsData.map((item) => {

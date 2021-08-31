@@ -79,6 +79,11 @@
     line-height: 11px;
   }
 
+  .footerNav{
+    margin-left: 69px;
+    margin-top: 35px;
+  }
+
 .fastAccess {
     margin-top: 35px;
     width: 170px;
@@ -86,12 +91,6 @@
 
   .mb23 {
     margin-bottom: 23px;
-  }
-
-  .columnMl69{
-    height: 127px;
-    margin-left: 69px;
-    margin-top: 34px;
   }
 
   .columnMl65{
@@ -108,6 +107,7 @@
     display: flex;
     font-size: 12px;
     font-weight: 700;
+    cursor: pointer;
     height: 32px;
     justify-content: space-between;
     line-height: 11px;
@@ -145,6 +145,7 @@
     border-radius: 4px;
     box-sizing: border-box;
     color: #181818;
+    cursor: pointer;
     font-size: 12px;
     font-weight: 700;
     height: 32px;

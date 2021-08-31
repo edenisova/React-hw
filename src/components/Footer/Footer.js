@@ -25,7 +25,10 @@ export default function Footer(props) {
             Linked<span className={styles.footerLogo__twoLetters}>In</span>
           </div>
         </div>
+        <div>
+        <div class={`${styles.footerSection} ${styles.footerNav}`}>Navigation</div>
         <FooterLinks links={linksFirst} styleName="columnMl69"/>
+        </div>
         <FooterLinks links={linksSecond} styleName="columnMl35"/>
         <FooterLinks links={linksThird} styleName="columnMl45"/>
         <div className={`${styles.fastAccess} ${styles.columnMl65}`}>

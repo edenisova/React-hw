@@ -50,12 +50,16 @@ color: #181818;
   line-height: 11px;
   text-transform: uppercase;
   color: #0275B1;
-  margin-right: 20px;
+  margin-right: 5px;
   text-decoration: none;
 }
 
 .trendingLine:hover{
   text-decoration: underline;
+}
+
+.pointerDown{
+  margin-right: 20px;
 }
 
 .divLine{
